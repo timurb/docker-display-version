@@ -3,4 +3,4 @@ FROM ubuntu
 ARG version
 ENV version=${version:-1}
 
-CMD echo $version
+CMD while true; do echo $version; sleep 1; done
