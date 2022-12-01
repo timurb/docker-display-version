@@ -1,6 +1,6 @@
 FROM ubuntu
 
-ARG version=1
-ENV version=${version}
+ARG VERSION=1
+ENV VERSION=$VERSION
 
-CMD while true; do echo $version; sleep 1; done
+CMD while true; do echo $VERSION; sleep 1; done

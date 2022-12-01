@@ -14,9 +14,9 @@ This is a simple dockerfile for testing various updates for deployments:
 ```
 $ docker build . -t test-version:1
 [+] Building 0.1s (5/5) FINISHED
-tbatyrshin@MacBook-Pro-2|::test-versions (master %) $ docker build . -t test-version:2 --build-arg version=2
+tbatyrshin@MacBook-Pro-2|::test-versions (master %) $ docker build . -t test-version:2 --build-arg VERSION=2
 [+] Building 0.1s (5/5) FINISHED
-tbatyrshin@MacBook-Pro-2|::test-versions (master %) $ docker build . -t test-version:3 --build-arg version=3
+tbatyrshin@MacBook-Pro-2|::test-versions (master %) $ docker build . -t test-version:3 --build-arg VERSION=3
 [+] Building 0.1s (5/5) FINISHED
 $ docker run -it --rm test-version:1
 1
